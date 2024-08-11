@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(233, 243, 243);
+}
+
+header{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 1.25em;
+    border-bottom: 10px solid rgb(107, 107, 107);
+}
+
+.galeria{
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.foto, p{
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+    
+
+}
+
+hr{
+    display: flex;
+    border: 0;
+    border-bottom: 4px double black;
+    width: 1750px;
+    margin: 0 auto;
+}
+
+.galeria img{
+    width: 600px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 3px solid black;
+    
+}
+
+.galeria p{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 4em;
+}
+
+.isquierda{
+   justify-content: flex-end; 
+}
+
+.derecha{
+    justify-content: flex-start;
+}
+
+.text-left{
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.text-right{
+    justify-content: center;
+    align-items: center;
+}

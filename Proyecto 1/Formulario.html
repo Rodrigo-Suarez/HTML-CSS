@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encuesta</title>
+    <link rel="stylesheet" href="Formulario.css">
+</head>
+<body>
+    <div class="fondo">
+        <main>
+
+            <div class="titulo">
+                <h1 id="title" >MINISTERIO DE LA NACIÓN</h1>
+                <img src="pngwing.com.png" height="110" width="75" alt="Escudo de armas">
+            </div>
+            
+            <div class="linea"></div>
+
+            <h2>Encuesta sobre la actualidad</h2>
+            <p id="description" class="descripcion">Completa el siguiente formulario con tu información personal</p>
+            
+            <div class="formulario">
+                <form action="tu  vieja" id="survey-form">
+                    <label id="name-label" for="name">Nombre/s<input type="text" name="nombre" placeholder="Ingrese su nombre/s aqui" id="name" required></label>
+                    <label for="second-name">Apellido/s<input type="text" name="second-name" placeholder="Ingrese su apellido/s aqui" id="second-name" required></label>
+                    <label id="number-label" for="number">Edad<input type="number" min="13" max="120" name="number"  id="number" placeholder="." required></label>
+                    <label id="email-label" for="email">Correo electronico<input type="email" name="email" placeholder="Ingrese su correo electronico aqui" id="email" required></label>
+                    <label for="genero">Género 
+                        <select name="genero" id="dropdown" required>
+                            <option value="0">(Selecciona una opcion)</option>
+                            <option value="1">Masculino</option>
+                            <option value="2">Femenino</option>
+                            <option value="3">Sin especificar</option>
+                        </select>
+                    </label>
+                    
+                    <p class="estudio">Maximo nivel de estudios alcanzado:</p>
+                    
+                    <label for="estudio" class="label-estudio"><input type="radio" name="estudio" id="estudio" value="sin-estudios" checked> Sin estudios</label>
+                    <label for="estudio" class="label-estudio"><input type="radio" name="estudio" id="estudio" value="Primario" > Primario completo</label>
+                    <label for="estudio" class="label-estudio"><input type="radio" name="estudio" id="estudio" value="secundario" > Secundario completo</label>
+                    <label for="estudio" class="label-estudio"><input type="radio" name="estudio" id="estudio" value="terciario"> Terciario completo</label>
+                    <label for="estudio" class="label-estudio"><input type="radio" name="estudio" id="estudio" value="Universidad"> Universidad completa</label>
+
+                    <p class="estudio">¿Que bienes posee en su casa?</p>
+
+                    <label for="bien" class="label-estudio"><input type="checkbox" name="bien" id="bien" value="celular"> Celular</label>
+                    <label for="bien" class="label-estudio"><input type="checkbox" name="bien" id="bien" value="televisor"> Televisor</label>
+                    <label for="bien" class="label-estudio"><input type="checkbox" name="bien" id="bien" value="computadora"> Computadora</label>
+                    <label for="bien" class="label-estudio"><input type="checkbox" name="bien" id="bien" value="lavarropas"> Lavarropas</label>
+                    <label for="bien" class="label-estudio"><input type="checkbox" name="bien" id="bien" value="heladera"> Heladera</label>
+
+                    <label for="comentario">Cuentanos mas sobre tu situación economica:
+                        <textarea name="comentario" id="comentario" placeholder="Escribe aqui" rows="4" cols="60" required></textarea>
+                    </label>
+
+                    <button type="submit" id="submit">Enviar</button>
+
+
+                </form>
+            </div>
+        </main>
+
+
+
+    </div>
+
+</body>
+</html>

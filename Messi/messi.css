@@ -1,0 +1,459 @@
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #081018;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    border-bottom: 5px solid rgba(154, 146, 1, 0.303); 
+    width: 100%;
+}
+header .lionel-messi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #081018;
+    color: rgb(233, 231, 231);
+    width: 100%;
+    position: relative;
+    
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    margin-top: 35px;
+    margin-left: 40%;
+}
+
+nav img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+header h1{
+    margin-top: 25px;
+    margin-bottom: 0;
+    font-size: 3em;
+    font-family: "bona nova sc";
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+header p{
+    margin-top: 0;
+    font-family: "bona nova sc";
+}
+
+.fondo-imagen{
+    background-color: black;
+}
+
+.fondo-imagen img{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 500px;
+    max-height: 500px;
+    object-fit: cover;
+    
+    
+}
+
+.container{
+    display: flex;  
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    border-top: 5px solid rgba(154, 146, 1, 0.303);
+    border-bottom: 5px solid rgba(154, 146, 1, 0.303);
+}
+
+.container .boxes{
+    display: flex;
+
+}
+
+.caja-1{
+    flex: 33%;
+    background-color: rgb(15, 13, 48); 
+    font-family: "Wittgenstein";
+}
+
+.caja-1 p{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(219, 216, 216);
+    font-size: 3em;
+}
+
+.caja-2{
+    flex: 33%;
+    background-color: rgb(18, 18, 54);
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.caja-2 img{
+    width: auto;
+    height: auto;
+    margin: 40px auto;
+    border: 3px solid rgba(154, 146, 1, 0.47);
+}
+
+.caja-3{
+    flex: 33%;
+    background-color: rgb(7, 16, 42);
+    
+}
+
+.caja-3 img{
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.premios{
+    display: flex;
+    width: 100%;
+    margin: 0;
+}
+
+.premios .stats{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+    font-family: "bona nova sc";
+}
+
+.ind-stats{
+    background-color: #0e111f;
+    flex: 50%;
+}
+
+.col-stats{
+    background-color: #090b14;
+    flex: 50%;
+}
+
+.ind-stats h2, .col-stats h2{
+    color: rgb(255, 255, 255);
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2.5em;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 50px 200px;
+    color: aliceblue;
+    font-family: "bona nova sc";
+}
+
+ul li{
+    position: relative;
+    padding-left: 30px;
+}
+
+ul li::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(-2px);
+    width: 20px; 
+    height: 20px; 
+    background-image: url(Imagenes/pngegg.png);
+    background-size: cover;   
+}
+
+.trayectoria{
+    display: flex; 
+    flex-direction: column;
+    height: 250px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-top: 5px solid rgba(154, 146, 1, 0.303);
+    border-bottom: 5px solid rgba(154, 146, 1, 0.303);
+}
+
+.trayectoria .titulo{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: "bona nova sc";
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+
+.trayectoria .Imagenes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.trayectoria .escudo{
+    width: auto;
+    height: auto;
+    max-height: 120px;
+}
+
+.trayectoria .flecha{
+    width: auto;
+    height: auto;
+    max-height: 100px;
+    transform: translateY(10px);
+}
+
+.messi{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.messi .foto{
+    display: flex;
+    height: 250px;
+    width: 100%;
+    position: relative;
+    
+}
+
+.overlay{
+    background: linear-gradient(rgba(0, 0, 0, 0.550) , rgba(255, 0, 0, 0), rgba(0, 0, 0, 0.550));
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.messi .foto .club{
+    flex: 80%;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.foto > .escudo{
+    flex: 20%;
+    height: auto;
+    width: auto;
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.right{
+   flex-direction: row-reverse; 
+}
+
+.newwels{
+    background-color: rgb(194, 11, 11);
+}
+
+.newwels-club{
+    object-position: 0px -120px;
+}
+
+.barcelona{
+    background-color: rgb(117, 26, 50);
+}
+
+.barcelona-club{
+    object-position: 0 -500px;
+}
+
+.psg{
+    background-color: rgb(22, 11, 120);
+}
+
+.psg-club{
+    object-position: 0 -300px;
+}
+
+.miami{
+    background-color: pink;
+}
+
+.miami-club{
+    object-position: 0 -50px;
+}
+
+.argentina{
+    background-color: rgb(151, 209, 229);
+}
+
+.argentina-club{
+    object-position: 0 -470px;
+}
+
+.stats{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.stats-titulo{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-family: "bona novo sc";
+    width: 100%;
+    height: 150px;
+    gap: 10px;
+    letter-spacing: 2px;
+    border-bottom: 5px solid rgba(154, 146, 1, 0.303);
+    border-top: 5px solid rgba(154, 146, 1, 0.303);
+}
+
+.stats-titulo img{
+    width: auto;
+    height: auto;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.stats p{
+    color: white;
+    font-family: "bona novo sc";
+    font-size: 2em;
+}
+
+.numeros{
+    display: flex;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.numeros .imagen{
+    background-color: rgb(1, 0, 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 8%;
+}
+
+.numeros .nombre{
+    background-color: #090b14;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 22%;
+}
+
+.numeros .cantidad{
+    display: flex;
+    flex: 70%;
+}
+
+.numeros-right{
+    flex-direction: row-reverse;
+}
+
+.numeros .cantidad{
+    background: linear-gradient(90deg, #0e111f 70%, black);
+}
+
+.numeros-right > .cantidad{
+    background: linear-gradient(90deg, black , #0e111f 30%)
+}
+
+.imagen img{
+    width: auto;
+    height: auto;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.cantidad p{
+    display: flex;
+    align-items: center;
+    margin: 0 40px;
+}
+
+.contenido{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 5px double rgba(154, 146, 1, 0.303)
+}
+
+.contenido .titulo{
+    color: white;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "bona novo sc";
+    font-size: 1.5em;
+    border-bottom: 5px double rgba(154, 146, 1, 0.303);
+    border-top: 5px double rgba(154, 146, 1, 0.303);
+}
+
+.momento{
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background: linear-gradient(90deg, black 1%,#0e111f 60%, black 100%);
+}
+
+.momento iframe{
+    width: 400px;
+    height: 230px;
+    margin-left: 50px;
+}
+
+.momento p{
+    color: white;
+    font-family: "bona novo sc";
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+hr{
+    width: 100%;
+    height: 3px;
+    background-color: rgba(154, 146, 1, 0.303);
+    border: 0;
+    margin: 0;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(207, 191, 191);
+    padding: 10px 20px;
+}
+
+footer a{
+    color: white;
+}
+
+footer a:hover{
+    color: gray;
+}

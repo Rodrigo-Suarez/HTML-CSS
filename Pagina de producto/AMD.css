@@ -1,0 +1,292 @@
+:root{
+    --amd-rojo-claro:#ff0303a9;
+    --amd-gris-claro: #131518;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 10%;
+    background-color: var(--amd-gris-claro);
+    padding: 0 30px;
+    position: fixed;
+    z-index: 1;
+    font-family: "kanit";
+}
+
+
+
+.amd{
+    display: flex;
+    align-items: center;
+}
+
+.amd h1{
+    font-size: 1.3em;
+    color: white;
+    padding-left: 20px;
+    letter-spacing: 1px;
+}
+
+.amd hr{
+    border: none;
+    background-color: white;
+    height: 20px;
+    width: 2px;
+    margin-left: 20px;
+}
+
+header img{
+    width: 8vw;
+    height: 8vh;
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+}
+
+header a:hover{
+    background-color: var(--amd-rojo-claro);
+}
+
+.inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grafica-foto{
+    width: 100vw;
+}
+
+.inicio .boton{
+    font-family: "kanit";
+    border-radius: 0;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    width:15vw;
+    height: 50px;
+    font-size: 1em;
+    margin-top: -100px;
+}
+
+.inicio .boton:hover{
+    background-color: var(--amd-rojo-claro);
+    border-color: var(--amd-rojo-claro);
+}
+
+.caracteristicas{
+    display: flex;
+    flex-direction: column; 
+}
+
+.caracteristicas hr{
+    width: 90%;
+    border: none;
+    height: 2px;
+    background-color: white;
+}
+
+.caract-1, .caract-2, .caract-3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin: 50px 100px;
+}
+
+.caract-3{
+    align-items: start;
+    gap: 100px;
+}
+
+.caract-1 img{
+    width: 25vw;
+}
+
+.caract-2 img{
+    width: 35vw;
+}
+
+.caract-3 img{
+    width: 20vw;
+}
+
+.caract-1b, .caract-2b, .caract-3b{
+    width: 50vw;
+    font-family: "kanit";
+    font-size: 1.2em;
+}
+
+.caract-1b h2{
+    letter-spacing: 2px;
+}
+
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.precios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "kanit";
+}
+
+.precios h1{
+    color: white;
+    letter-spacing: 1px;
+}
+
+.precios-box{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    margin: 50px 0;
+}
+
+.tarjeta{
+    color: white;
+    border:3px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: border-color 0.3s;
+}
+
+.tarjeta h3{
+    font-size: 1.5em;
+    padding: 10px 10px;
+    letter-spacing: 1px;
+    background-color: var(--amd-gris-claro);
+    margin: 0;
+    transition: background-color 0.3s;
+}
+
+.tarjeta p{
+    font-size: 2em;
+    padding: 50px 0;
+}
+
+.tarjeta button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    width: 100%;
+    height: 30px;
+    border: none;
+    font-family: "kanit";
+    transition: background-color 0.1s;
+}
+
+.tarjeta:hover{
+    border-color: rgb(124, 8, 8);
+}
+
+.tarjeta:hover h3{
+    background-color: var(--amd-rojo-claro);
+}
+
+.tarjeta:hover button{
+    background-color: var(--amd-rojo-claro);
+    color: white;
+}
+
+.tarjeta button:active{
+    background-color: white;
+    color: var(--amd-rojo-claro);
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "kanit";
+    margin: 50px 0;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.correo{
+    display: flex;
+}
+
+.correo input[type="email"]{
+    background-color: var(--amd-gris-claro);
+    width: 400px;
+    height: 50px;
+    border: 5px solid rgb(177, 5, 5);
+    border-right: unset;
+    font-size: 1.3em;
+    color: white;
+    font-family: "kanit";
+}
+
+.correo input[type="submit"]{
+    background-color: rgb(59, 9, 9);
+    width: 100px;
+    height: 50px;
+    border: 5px solid rgb(177, 5, 5);
+    color: white;
+    font-family: "kanit";
+    font-size: 1.2em;
+}
+
+.correo input[type="submit"]:hover{
+    background-color: white;
+    color: black;
+}
+
+.correo input[type="submit"]:active{
+    background-color: rgb(182, 179, 179);
+    color: black;
+}
+
+footer{
+    height: 200px;
+    background-color: var(--amd-gris-claro);
+    color: white;
+    font-family: "kanit";
+    display: flex;
+    letter-spacing: 1px;
+}
+
+.email-personal, .fuentes{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1000px){
+    header{
+       font-size: 1em;
+    }
+}
